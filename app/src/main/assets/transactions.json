@@ -1,0 +1,66 @@
+[
+  {
+    "id": "TRX001",
+    "date": "2024-01-15",
+    "amount": 500000,
+    "description": "Transfer ke Budi Santoso",
+    "accountNumber": "1234567890",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "TRX002",
+    "date": "2024-01-14",
+    "amount": 1500000,
+    "description": "Transfer ke Siti Rahayu",
+    "accountNumber": "0987654321",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "TRX003",
+    "date": "2024-01-13",
+    "amount": 250000,
+    "description": "Transfer ke Ahmad Fauzi",
+    "accountNumber": "1122334455",
+    "status": "FAILED"
+  },
+  {
+    "id": "TRX004",
+    "date": "2024-01-12",
+    "amount": 3000000,
+    "description": "Transfer ke PT Maju Jaya",
+    "accountNumber": "5544332211",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "TRX005",
+    "date": "2024-01-11",
+    "amount": 750000,
+    "description": "Transfer ke Dewi Lestari",
+    "accountNumber": "6677889900",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "TRX006",
+    "date": "2024-01-10",
+    "amount": 100000,
+    "description": "Transfer ke Rudi Hermawan",
+    "accountNumber": "9988776655",
+    "status": "FAILED"
+  },
+  {
+    "id": "TRX007",
+    "date": "2024-01-09",
+    "amount": 2000000,
+    "description": "Transfer ke CV Berkah Abadi",
+    "accountNumber": "1231231230",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "TRX008",
+    "date": "2024-01-08",
+    "amount": 450000,
+    "description": "Transfer ke Hendra Wijaya",
+    "accountNumber": "3213213210",
+    "status": "SUCCESS"
+  }
+]

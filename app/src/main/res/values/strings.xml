@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Fake Banking</string>
+    <string name="saldo_rekening">Saldo Rekening</string>
+    <string name="selamat_datang">Selamat datang,</string>
+    <string name="transfer">Transfer</string>
+    <string name="kirim_uang">Kirim uang</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="transaksi">Transaksi</string>
+    <string name="menu_layanan">Menu Layanan</string>
+    <string name="transaksi_aman">Transaksi Aman</string>
+    <string name="semua_transaksi_dilindungi_enkripsi_256_bit">Semua transaksi dilindungi enkripsi 256-bit</string>
+    <string name="ke_rekening">Ke Rekening</string>
+    <string name="nominal">Nominal</string>
+    <string name="pastikan_data_sudah_benar_sebelum_melanjutkan">Pastikan data sudah benar sebelum melanjutkan.</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="batal">Batal</string>
+    <string name="konfirmasi_transfer">Konfirmasi Transfer</string>
+    <string name="transfer_berhasil">Transfer Berhasil!</string>
+    <string name="transfer_gagal">Transfer Gagal</string>
+    <string name="transaksi_anda_telah_berhasil_diproses">Transaksi Anda telah berhasil diproses.</string>
+    <string name="detail_transfer">Detail Transfer</string>
+    <string name="nomor_rekening_tujuan">Nomor Rekening Tujuan</string>
+    <string name="masukkan_10_digit_nomor_rekening">Masukkan 10 digit nomor rekening</string>
+    <string name="rekening_asal">Rekening Asal</string>
+    <string name="saldo">Saldo</string>
+    <string name="nominal_transfer">Nominal Transfer</string>
+    <string name="belum_ada_transaksi">Belum ada transaksi</string>
+    <string name="riwayat_transaksi">Riwayat Transaksi</string>
+    <string name="total_transaksi">Total Transaksi</string>
+    <string name="kirim">Kirim</string>
+</resources>
