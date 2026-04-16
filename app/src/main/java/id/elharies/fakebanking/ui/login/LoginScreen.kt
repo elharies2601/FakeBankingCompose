@@ -86,6 +86,7 @@ fun LoginScreen(
         viewModel.event.collectLatest {
             when (it) {
                 is LoginEvent.NavigateToDashboard -> {
+                    viewModel.processAction(LoginIntent.ClearAllField)
                     onLoginSuccess(it.user)
                 }
 

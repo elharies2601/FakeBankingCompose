@@ -39,6 +39,10 @@ class LoginViewModel @Inject constructor(private val repository: UserRepository)
             is LoginIntent.UsernameChanged -> {
                 _state.update { it.copy(username = action.username, usernameError = null, loginError = null) }
             }
+
+            LoginIntent.ClearAllField -> {
+                _state.update { it.copy(username = "", password = "", usernameError = null, passwordError = null, loginError = null) }
+            }
         }
 
     }
