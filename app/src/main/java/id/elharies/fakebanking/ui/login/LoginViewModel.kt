@@ -2,7 +2,6 @@ package id.elharies.fakebanking.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import id.elharies.fakebanking.data.model.result.ApiResult
 import id.elharies.fakebanking.domain.UserRepository
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -13,10 +12,8 @@ import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class LoginViewModel @Inject constructor(private val repository: UserRepository): ViewModel() {
+class LoginViewModel constructor(private val repository: UserRepository): ViewModel() {
     private val _state: MutableStateFlow<LoginUiState> = MutableStateFlow(LoginUiState())
     val state: StateFlow<LoginUiState>
         get() = _state.asStateFlow()

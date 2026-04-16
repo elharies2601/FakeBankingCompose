@@ -2,7 +2,6 @@ package id.elharies.fakebanking.ui.history
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import id.elharies.fakebanking.data.model.result.ApiResult
 import id.elharies.fakebanking.data.model.transaction.TransactionRes
 import id.elharies.fakebanking.domain.TransactionRepository
@@ -11,10 +10,8 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class HistoryViewModel @Inject constructor(private val transactionRepository: TransactionRepository): ViewModel() {
+class HistoryViewModel(private val transactionRepository: TransactionRepository): ViewModel() {
 
     private val _state: MutableStateFlow<HistoryUiState> = MutableStateFlow(HistoryUiState())
     val state: StateFlow<HistoryUiState>

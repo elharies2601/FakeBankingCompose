@@ -4,9 +4,8 @@ import id.elharies.fakebanking.data.model.result.ApiResult
 import id.elharies.fakebanking.data.model.user.User
 import id.elharies.fakebanking.domain.UserRepository
 import kotlinx.coroutines.delay
-import javax.inject.Inject
 
-class UserRepositoryImpl @Inject constructor() : UserRepository {
+class UserRepositoryImpl: UserRepository {
 
     private val dummyUsers = mapOf(
         "user123" to Pair("password123", User("user123", "Budi Santoso", 15750000.0, "1234567890")),

@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.hilt.plugin)
+//    alias(libs.plugins.hilt.plugin)
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.ksp)
     alias(libs.plugins.jetbrains.kotlin.serialization)
@@ -55,10 +55,10 @@ dependencies {
     implementation(libs.androidx.compose.material3.icon.extended)
 
     // hilt
-    implementation(libs.hilt.core)
-    implementation(libs.androidx.hilt.navigation.compose)
-    ksp(libs.hilt.compiler)
-    implementation(libs.hilt.android)
+//    implementation(libs.hilt.core)
+//    implementation(libs.androidx.hilt.navigation.compose)
+//    ksp(libs.hilt.compiler)
+//    implementation(libs.hilt.android)
 
     // coroutine
     implementation(libs.kotlinx.coroutines.core)

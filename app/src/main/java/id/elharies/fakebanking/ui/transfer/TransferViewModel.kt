@@ -2,23 +2,16 @@ package id.elharies.fakebanking.ui.transfer
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import id.elharies.fakebanking.data.model.result.ApiResult
 import id.elharies.fakebanking.data.model.transaction.TransferReq
-import id.elharies.fakebanking.data.model.user.User
 import id.elharies.fakebanking.domain.TransactionRepository
-import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class TransferViewModel @Inject constructor(private val transactionRepository: TransactionRepository) :
+class TransferViewModel(private val transactionRepository: TransactionRepository) :
     ViewModel() {
 
     private val _state: MutableStateFlow<TransferUiState> = MutableStateFlow(TransferUiState())

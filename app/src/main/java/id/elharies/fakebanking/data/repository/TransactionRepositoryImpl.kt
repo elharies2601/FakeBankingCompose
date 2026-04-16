@@ -1,7 +1,6 @@
 package id.elharies.fakebanking.data.repository
 
 import android.content.Context
-import dagger.hilt.android.qualifiers.ApplicationContext
 import id.elharies.fakebanking.data.model.result.ApiResult
 import id.elharies.fakebanking.data.model.transaction.TransactionRes
 import id.elharies.fakebanking.data.model.transaction.TransferReq
@@ -10,9 +9,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
-import javax.inject.Inject
 
-class TransactionRepositoryImpl @Inject constructor(@ApplicationContext val context: Context): TransactionRepository {
+class TransactionRepositoryImpl(val context: Context): TransactionRepository {
     override suspend fun getTransactions(): ApiResult<List<TransactionRes>> {
         return withContext(Dispatchers.IO) {
             try {

@@ -57,8 +57,8 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
 import id.elharies.fakebanking.component.BankingButton
 import id.elharies.fakebanking.data.model.user.User
 import id.elharies.fakebanking.ui.theme.BlueContainer
@@ -76,7 +76,7 @@ import kotlinx.coroutines.flow.collectLatest
 
 @Composable
 fun LoginScreen(
-    viewModel: LoginViewModel = hiltViewModel(),
+    viewModel: LoginViewModel = viewModel(),
     onLoginSuccess: (User) -> Unit = {}
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
